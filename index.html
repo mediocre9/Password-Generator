@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css\style.css" />
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="child-container">
+            <div class="item-container">
+                <div class="label-divs">
+                    <label class="field-labels">Length</label>
+                </div>
+                <input type="text" name="length-field" class="text-field" id="first-field" />
+            </div>
+
+            <div class="item-container">
+                <div class="label-divs">
+                    <label class="field-labels">Password</label>
+                </div>
+                <input type="text" name="password-field" class="text-field" id="second-field" />
+
+                <button id="copy" title="Copy" onclick="CopyToClipBoard()"><i class="fa fa-copy"></i></button>
+                <span id="tooltip">Text Copied!</span>
+            </div>
+            <div class="item-container">
+                <div class="radio-button-container">
+                    <input type="radio" name="numeric" class="radio-buttons" id="special" />
+                    <label class="radio-labels" for="special" id="special-id">Special</label>
+                    <input type="radio" name="numeric" class="radio-buttons" id="numeric" />
+                    <label class="radio-labels" for="numeric" id="numeric-id">Numeric</label>
+                    <input type="radio" name="numeric" class="radio-buttons" id="uppercase" />
+                    <label class="radio-labels" for="uppercase" id="uppercase-id">Upper</label>
+                    <input type="radio" name="numeric" class="radio-buttons" id="lowercase" />
+                    <label class="radio-labels" for="lowercase" id="lowercase-id">Lower</label>
+                </div>
+                <div class="button-container">
+                    <input type="button" name="vaidate" onclick="Generate()" id="validate-button" value="Generate" />
+                </div>
+                <div class="about-section">
+                    <span id="about-id"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script\script.js"></script>
+</body>
+
+</html>
