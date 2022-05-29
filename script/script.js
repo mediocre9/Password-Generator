@@ -5,7 +5,6 @@ let tooltip = document.getElementById('tooltip');
 let length_field = document.getElementById('first-field');
 let password_field = document.getElementById('second-field');
 let radio_button = document.getElementById('special');
-document.getElementById('about-id').innerHTML = "Programmed By Fahad Zia"
 radio_button.checked = true;
 password_field.disabled = true;
 length_field.value = 12;
