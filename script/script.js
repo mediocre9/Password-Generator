@@ -1,5 +1,4 @@
 // Password Generator script 
-// function generate passwords
 
 let tooltip = document.getElementById('tooltip');
 let length_field = document.getElementById('first-field');
@@ -15,8 +14,6 @@ function ShowToolTip() {
 }
 
 function HideToolTip() {
-	// tooltip.style.transitionDelay = '0.7s' ;
-	// tooltip.style.transitionDuration = '1s' ;
 	tooltip.style.opacity = '0';
 }
 
